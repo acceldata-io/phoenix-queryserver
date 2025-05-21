@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env ambari-python-wrap
 
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
@@ -15,8 +15,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-''' Python DB API 2.0 driver compliance unit test suite. 
-    
+''' Python DB API 2.0 driver compliance unit test suite.
+
     This software is Public Domain and may be used without restrictions.
 
  "Now we have booze and barflies entering the discussion, plus rumours of
@@ -42,8 +42,8 @@ def str2bytes(sval):
 class DatabaseAPI20Test(unittest.TestCase):
     ''' Test a database self.driver for DB API 2.0 compatibility.
         This implementation tests Gadfly, but the TestCase
-        is structured so that other self.drivers can subclass this 
-        test case to ensure compiliance with the DB-API. It is 
+        is structured so that other self.drivers can subclass this
+        test case to ensure compiliance with the DB-API. It is
         expected that this TestCase may be expanded in the future
         if ambiguities or edge conditions are discovered.
 
@@ -53,9 +53,9 @@ class DatabaseAPI20Test(unittest.TestCase):
         self.driver, connect_args and connect_kw_args. Class specification
         should be as follows:
 
-        import dbapi20 
+        import dbapi20
         class mytest(dbapi20.DatabaseAPI20Test):
-           [...] 
+           [...]
 
         Don't 'import DatabaseAPI20Test from dbapi20', or you will
         confuse the unit tester - just 'import dbapi20'.
@@ -686,7 +686,7 @@ class DatabaseAPI20Test(unittest.TestCase):
 
     def help_nextset_setUp(self,cur):
         ''' Should create a procedure called deleteme
-            that returns two result sets, first the 
+            that returns two result sets, first the
 	    number of rows in booze then "name from booze"
         '''
         raise NotImplementedError('Helper not implemented')
