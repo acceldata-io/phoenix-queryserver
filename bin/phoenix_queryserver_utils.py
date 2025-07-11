@@ -82,7 +82,7 @@ def setPath():
     PHOENIX_CLIENT_JAR_PATTERN = "phoenix-client-*.jar"
     OLD_PHOENIX_CLIENT_JAR_PATTERN = "phoenix-*[!n]-client.jar"
     PHOENIX_THIN_CLIENT_JAR_PATTERN = "phoenix-queryserver-client-*.jar"
-    PHOENIX_QUERYSERVER_JAR_PATTERN = "phoenix-queryserver-[!c]*.jar"
+    PHOENIX_QUERYSERVER_JAR_PATTERN = "phoenix-queryserver-[0-9.]*[0-9].jar"
     PHOENIX_LOADBALANCER_JAR_PATTERN = "load-balancer-*[!t][!e][!s][!t][!s].jar"
     SQLLINE_WITH_DEPS_PATTERN = "sqlline-*-jar-with-dependencies.jar"
     SLF4J_BACKEND_JAR_PATTERN = "log4j-slf4j*.jar"
