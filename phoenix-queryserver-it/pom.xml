@@ -28,7 +28,7 @@
   <parent>
     <groupId>org.apache.phoenix</groupId>
     <artifactId>phoenix-queryserver-parent</artifactId>
-    <version>5.2.1.3.3.6.3-SNAPSHOT</version>
+    <version>5.2.1.3.3.6.4-1</version>
   </parent>
 
   <artifactId>phoenix-queryserver-it</artifactId>
@@ -190,8 +190,8 @@
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
-      <artifactId>bcprov-jdk15on</artifactId>
-      <version>1.68</version>
+      <artifactId>bcprov-jdk18on</artifactId>
+      <version>1.78</version>
       <scope>test</scope>
     </dependency>
     <dependency>
