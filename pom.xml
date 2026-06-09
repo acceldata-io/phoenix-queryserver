@@ -31,7 +31,7 @@
 
     <groupId>org.apache.phoenix</groupId>
     <artifactId>phoenix-queryserver-parent</artifactId>
-    <version>5.2.1.3.3.6.5-SNAPSHOT</version>
+    <version>5.3.1.3.4.3.0-1</version>
     <packaging>pom</packaging>
     <name>Phoenix Query Server Maven Parent Project</name>
 
@@ -112,15 +112,15 @@
         <top.dir>${project.basedir}</top.dir>
         <test.tmp.dir>${project.build.directory}</test.tmp.dir>
 
-        <phoenix.version>5.2.1.3.3.6.5-SNAPSHOT</phoenix.version>
+        <phoenix.version>5.3.1.3.4.3.0-1</phoenix.version>
 
         <!-- Hadoop/Hbase Versions -->
-        <hbase.version>2.6.2.3.3.6.5-SNAPSHOT</hbase.version>
-        <hadoop.version>3.3.6.3.3.6.5-SNAPSHOT</hadoop.version>
+        <hbase.version>2.6.4.3.4.3.0-1</hbase.version>
+        <hadoop.version>3.4.3.3.4.3.0-1</hadoop.version>
         <phoenix.client.artifactid>phoenix-client-embedded-hbase-2.6</phoenix.client.artifactid>
 
         <!-- Dependency versions -->
-        <zookeeper.version>3.8.4.3.3.6.5-SNAPSHOT</zookeeper.version>
+        <zookeeper.version>3.8.6.3.4.3.0-1</zookeeper.version>
         <!-- Curator 4.2.0 supports ZK 3.8 runtime, but TestServer fails to start-->
         <curator.version>5.6.0</curator.version>
 
@@ -166,7 +166,7 @@
         <jacoco.branch.coverage.percentage>0.0</jacoco.branch.coverage.percentage>
 
         <!-- Java version specific settings for tests -->
-        <compileSource>1.8</compileSource>
+        <compileSource>17</compileSource>
         <maven.compiler.source>${compileSource}</maven.compiler.source>
         <maven.compiler.target>${compileSource}</maven.compiler.target>
 
