@@ -108,19 +108,20 @@
     </distributionManagement>
 
     <properties>
+    <odp.release.version>3.2.3.7-2</odp.release.version>
         <!-- General Properties -->
         <top.dir>${project.basedir}</top.dir>
         <test.tmp.dir>${project.build.directory}</test.tmp.dir>
 
-        <phoenix.version>5.2.1.3.2.3.7-2</phoenix.version>
+        <phoenix.version>5.2.1.${odp.release.version}</phoenix.version>
 
         <!-- Hadoop/Hbase Versions -->
-        <hbase.version>2.5.10.3.2.3.7-2</hbase.version>
-        <hadoop.version>3.2.3.3.2.3.7-2</hadoop.version>
+        <hbase.version>2.5.10.${odp.release.version}</hbase.version>
+        <hadoop.version>3.2.3.${odp.release.version}</hadoop.version>
         <phoenix.client.artifactid>phoenix-client-embedded-hbase-2.5</phoenix.client.artifactid>
 
         <!-- Dependency versions -->
-        <zookeeper.version>3.5.10.3.2.3.7-2</zookeeper.version>
+        <zookeeper.version>3.5.10.${odp.release.version}</zookeeper.version>
         <!-- Curator 4.2.0 supports ZK 3.8 runtime, but TestServer fails to start-->
         <curator.version>5.6.0</curator.version>
 
