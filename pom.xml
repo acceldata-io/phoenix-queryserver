@@ -31,7 +31,7 @@
 
     <groupId>org.apache.phoenix</groupId>
     <artifactId>phoenix-queryserver-parent</artifactId>
-    <version>5.2.1.3.3.6.5-SNAPSHOT</version>
+    <version>5.2.1.3.3.6.501-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Phoenix Query Server Maven Parent Project</name>
 
@@ -109,7 +109,7 @@
 
     <properties>
         <!-- General Properties -->
-        <odp.release.version>3.3.6.5-SNAPSHOT</odp.release.version>
+        <odp.release.version>3.3.6.501-SNAPSHOT</odp.release.version>
         <top.dir>${project.basedir}</top.dir>
         <test.tmp.dir>${project.build.directory}</test.tmp.dir>
 
